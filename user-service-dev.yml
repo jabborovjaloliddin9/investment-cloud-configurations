@@ -15,22 +15,6 @@ spring:
     hibernate:
       ddl-auto: update
     open-in-view: false
-  security:
-    user:
-      name: Jalol
-      password: Jalol9
-  data:
-    redis:
-      port: 6379
-      host: localhost
 
-  mail:
-    host: smtp.gmail.com
-    port: 578
-    username: jabborovjalol9@gmail.com
-    password: komilaxonim2020
-    properties:
-      smtp:
-        auth: true
-        starttls:
-          enable: true
+key:
+  test: testjon
