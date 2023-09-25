@@ -1,0 +1,36 @@
+server:
+  port: 8002
+  servlet:
+    context-path: /api/v1
+  error:
+    #    validationlar uchun
+    include-binding-errors: always
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: jshkm
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  security:
+    user:
+      name: Jalol
+      password: Jalol9
+  data:
+    redis:
+      port: 6379
+      host: localhost
+
+  mail:
+    host: smtp.gmail.com
+    port: 578
+    username: jabborovjalol9@gmail.com
+    password: komilaxonim2020
+    properties:
+      smtp:
+        auth: true
+        starttls:
+          enable: true
