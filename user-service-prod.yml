@@ -1,7 +1,7 @@
 server:
   port: 8001
   servlet:
-    context-path: /user
+    context-path: /user-service
   error:
     #    validationlar uchun
     include-binding-errors: always
