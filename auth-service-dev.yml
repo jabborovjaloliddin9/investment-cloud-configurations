@@ -1,0 +1,17 @@
+server:
+  port: 8004
+  servlet:
+    context-path: /auth-service
+  error:
+    include-binding-errors: always
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/investment-cloud
+    username: postgres
+    password: jshkm
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
