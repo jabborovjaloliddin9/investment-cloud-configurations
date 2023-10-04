@@ -1,13 +1,12 @@
 server:
-  port: 8004
+  port: 8005
   servlet:
-    context-path: /auth-service
+    context-path: /currency-service
   error:
     include-binding-errors: always
-
 spring:
   application:
-    name: auth-service
+    name: currency-service
   datasource:
     url: jdbc:postgresql://localhost:5432/investment-cloud
     username: postgres
@@ -17,10 +16,10 @@ spring:
     hibernate:
       ddl-auto: update
     open-in-view: false
-  data:
-    redis:
-      port: 6379
-      host: localhost
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
-secret:
-  key: lsnflsmdlsamdflaskndfasnsdflasndfaskdnflkasndfksasdnlkadfkln
+
