@@ -5,8 +5,6 @@ server:
   error:
     include-binding-errors: always
 spring:
-  application:
-    name: currency-service
   datasource:
     url: jdbc:postgresql://localhost:5432/investment-cloud
     username: postgres
