@@ -13,11 +13,12 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
     open-in-view: false
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: false
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
-
 
