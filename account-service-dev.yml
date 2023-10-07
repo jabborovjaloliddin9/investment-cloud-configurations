@@ -14,3 +14,7 @@ spring:
     hibernate:
       ddl-auto: update
     open-in-view: false
+
+security:
+  username: jaloliddin21
+  password: jalol21
