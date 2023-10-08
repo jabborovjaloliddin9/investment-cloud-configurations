@@ -65,7 +65,7 @@ resilience4j:
       default:
         registerHealthIndicator: true
     instances:
-      auth-service:
+      account-service:
         register-helth-indicator: true
         event-consumer-buffer-size: 10
         failure-rate-threshold: 50 #oxirgi 10 s da yuborirgan so`rovlarining 50 % failur bo`ladigan bo`lsa Circuit Breaker OPEN holatga o`tadi
@@ -75,7 +75,7 @@ resilience4j:
         permitted-number-of-calls-in-half-open-state: 3 #HALF_OPEN holatda yana  marta so`rov yuboradi, agar yuborilgan so`rovlarning 50% failur bo`lsa OPEN holatga o`tadi, aks holda CLOSED holatga o`tadi
         sliding-window-size: 10 #oxirgi 10 s dagi so`rovlarga qaraydi
         sliding-window-type: TIME_BASED #2 xil bo`ladi: COUNT_BASED, TIME_BASED, agar COUNT_BASED bo`lsa oxirgi n ta so`rovga qaraydi, agar TIME_BASED bo`lsa oxirgi t vaqtdagi so`rovlarga qaraydi
-      account-service:
+      currency-service:
         register-helth-indicator: true
         event-consumer-buffer-size: 10
         failure-rate-threshold: 50
