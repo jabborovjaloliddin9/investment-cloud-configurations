@@ -4,6 +4,10 @@ spring:
       discovery:
         locator:
           enabled: true
+      #ServerWebAxchange dan so`rov yuboruvchini aniqlay olmasa exception otmsaligi uchun
+      filter:
+        request-rate-limiter:
+          deny-empty-key: false
       routes:
         - id: user-service
           predicates:
