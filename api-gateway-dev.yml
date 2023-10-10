@@ -39,7 +39,8 @@ spring:
         - id: account-service
           predicates:
             - Path=/account-service/**
-
+          filters:
+            - AuthenticationFilter
 #          filters:
 #            - StripPrefix=1
 #            - name: RequestRateLimiter
