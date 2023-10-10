@@ -1,9 +1,9 @@
 spring:
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
+#      discovery:
+#        locator:
+#          enabled: true
       #ServerWebAxchange dan so`rov yuboruvchini aniqlay olmasa exception otmsaligi uchun
       filter:
         request-rate-limiter:
@@ -39,8 +39,7 @@ spring:
         - id: account-service
           predicates:
             - Path=/account-service/**
-          filters:
-            - AuthenticationFilter
+
 #          filters:
 #            - StripPrefix=1
 #            - name: RequestRateLimiter
