@@ -1,4 +1,7 @@
 spring:
+  config:
+    import:
+      - security.properties
   cloud:
     gateway:
       discovery:
