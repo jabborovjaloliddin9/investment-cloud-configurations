@@ -6,9 +6,9 @@ server:
     include-binding-errors: always
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/investment-cloud
-    username: postgres
-    password: jshkm
+    url: jdbc:postgresql://${db_host}:${db_port}/${db_database}
+    username: ${db_username}
+    password: ${db_password}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
