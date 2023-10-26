@@ -1,5 +1,5 @@
 server:
-  port: 8006
+  port: ${account_service_port}
   servlet:
     context-path: /account-service
   error:
@@ -12,7 +12,7 @@ spring:
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: ${db_ddl_aouto}
     open-in-view: false
 
 security:

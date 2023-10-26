@@ -1,5 +1,5 @@
 server:
-  port: 8005
+  port: ${currency_service_port}
   servlet:
     context-path: /currency-service
   error:
@@ -12,7 +12,7 @@ spring:
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: ${db_ddl_aouto}
       naming:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
     open-in-view: false

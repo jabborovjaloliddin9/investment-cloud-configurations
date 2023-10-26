@@ -1,5 +1,5 @@
 server:
-  port: 8004
+  port: ${auth_service_port}
   servlet:
     context-path: /auth-service
   error:
@@ -18,12 +18,12 @@ spring:
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: ${db_ddl_aouto}
     open-in-view: false
   data:
     redis:
-      port: 6379
-      host: localhost
+      port: ${redis_port}
+      host: ${redis_host}
 
 #user-service metirkalarini olish uchun ishlatiladi
 management:

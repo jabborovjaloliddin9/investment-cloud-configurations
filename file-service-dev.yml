@@ -1,5 +1,5 @@
 server:
-  port: 8002
+  port: ${file_service_port}
   servlet:
     context-path: /file-service
   error:
@@ -13,7 +13,7 @@ spring:
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: ${db_ddl_aouto}
     open-in-view: false
   security:
     user:
@@ -21,8 +21,8 @@ spring:
       password: Jalol9
   data:
     redis:
-      port: 6379
-      host: localhost
+      port: ${redis_port}
+      host: ${redis_host}
 
   mail:
     host: smtp.gmail.com

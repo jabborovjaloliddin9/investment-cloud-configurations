@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: ${user_service_port}
   servlet:
     context-path: /user-service
   error:
